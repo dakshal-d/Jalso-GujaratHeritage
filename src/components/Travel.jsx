@@ -222,7 +222,7 @@ function Travel() {
                 <div class="flex flex-col justify-between p-4 leading-normal">
                     <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Gujarat is a state in western India known for its rich history, diverse culture, and vibrant tourism industry. Here are some data points on Gujarat tourism:</h5>
                     <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                        <ul><li>
+                        <ul><li><br></br>
                             <b>1. Domestic Tourist Arrivals:</b> According to the Ministry of Tourism, Government of India, Gujarat received around 5.9 million domestic tourist visits in 2019, which was an increase of 18.5% from the previous year.</li>
                             <br></br>
                             <li><b>2. Foreign Tourist Arrivals:</b> Gujarat received around 7.1 lakh foreign tourist visits in 2019, which was an increase of 16.5% from the previous year.</li>
