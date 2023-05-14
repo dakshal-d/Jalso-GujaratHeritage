@@ -203,7 +203,7 @@ function Travel() {
             </div>
             <Link to="/travel/KnowWeather" className='mx-40 px-20 py-12 text-xl hover:animate-pulse cursor-pointer hover:border-2 hover:border-black/40 border-2 border-white rounded font-bold bg-amber-500 flex items-center justify-center'
             >Know The Weather</Link><br></br>
-            <div className='grid grid-rows-5 grid-cols-4 gap-5 mx-40 '>
+            <div className='grid grid-rows-3 grid-cols-4 gap-5 mx-40 '>
 
                 <Link to="/travel/Ahmedabad" className='px-5 py-10 text-xl hover:animate-pulse cursor-pointer hover:border-2 hover:border-black/40 border-2 border-white rounded font-bold bg-amber-500 flex items-center justify-center'
                 >Ahmedabad</Link>
@@ -218,7 +218,7 @@ function Travel() {
                 <Link to="/travel/Junagadh" className='px-5  py-20 text-xl hover:animate-pulse cursor-pointer hover:border-2 hover:border-black/40 border-2 border-white rounded font-bold bg-amber-500 flex items-center justify-center'>Junagadh</Link>
 
             </div>
-            <a class="mx-40 px-20 py-12 text-xl flex items-center bg-white border border-gray-200 rounded-lg shadow  hover:bg-gray-100 dark:border-gray-700 ">
+            <a class="mx-40 my-20 px-20 py-12 text-xl flex items-center bg-white border border-gray-200 rounded-lg shadow  hover:bg-gray-100 dark:border-gray-700 ">
                 <div class="flex flex-col justify-between p-4 leading-normal">
                     <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Gujarat is a state in western India known for its rich history, diverse culture, and vibrant tourism industry. Here are some data points on Gujarat tourism:</h5>
                     <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
