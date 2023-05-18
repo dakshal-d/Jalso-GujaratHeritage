@@ -1,9 +1,9 @@
 import React from 'react'
 import Carousal from './Carousal'
 
-function Hero() {
+function Hero(){
     return (
-        <section className="bg-white dark:bg-gray-900 mt-20">
+        <section className="bg-white dark:bg-gray-900 mt-20 ">
             <div className="grid max-w-screen-xl px-4 py-8 mx-40 lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
                 <div className=" p-4 bg-gray-100 rounded-xl mr-16 place-self-center lg:col-span-7">
                     <h1 className="max-w-2xl mb-4 text-3xl font-extrabold tracking-tight leading-none md:text-4xl xl:text-6xl dark:text-white">Get best Travel and Food in <span className='text-blue-600 '>Gujarat</span> </h1>
@@ -21,9 +21,9 @@ function Hero() {
                         </a>
                     </div>
                 </div>
-                <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
-                <iframe className='rounded shadow-2xl' width="420" height="330"
-                src="https://www.youtube.com/embed/15Jj8QEqCK4">
+                <div className="hidden lg:mt-0 lg:col-span-5 lg:flex ">
+                <iframe title='Youtube Video' className='rounded shadow-2xl' width="420" height="330"
+                src="https://www.youtube.com/embed/15Jj8QEqCK4" alt="Youtube Video">
                 </iframe>
                 </div>
             </div>

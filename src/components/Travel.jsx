@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 function Travel() {
     return (
 
-        <section className='mt-20'>
+        <section className='mt-20 sm:text-center'>
             <div className="bg-gray-100 mx-40 flex justify-center my-28 rounded py-10">
                 <div className="flex items-center justify-center w-full h-full py-24 sm:py-8 px-4">
                     {/* Carousel for desktop and large size devices */}
