@@ -2,7 +2,7 @@ import React from 'react'
 
 function TourismAttraction() {
   return (
-    <div>TourismAttraction</div>
+    <div className='mt-20 ml-40 mr-40'>TourismAttraction</div>
   )
 }
 
