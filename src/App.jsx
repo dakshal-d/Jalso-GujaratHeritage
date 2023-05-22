@@ -22,7 +22,7 @@ import {
   Route
 } from "react-router-dom";
 
-function App() {
+export default function App() {
   return (
     <div className="">
       <Router>
@@ -53,4 +53,3 @@ function App() {
   );
 }
 
-export default App;
