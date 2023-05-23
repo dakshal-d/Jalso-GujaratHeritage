@@ -14,7 +14,7 @@ import Porbandar from "./components/City/Porbandar";
 import Vadodra from "./components/City/Vadodra";
 import Junagadh from "./components/City/Junagadh";
 import Ahmedabad from "./components/City/Ahmedabad";
-import Rajkot from "./components/City/Rajkot"
+import Rajkot from "./components/City/Rajkot";
 
 import {
   BrowserRouter as Router,
