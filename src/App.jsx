@@ -16,7 +16,7 @@ import Junagadh from "./components/City/Junagadh";
 import Ahmedabad from "./components/City/Ahmedabad";
 import Rajkot from "./components/City/Rajkot";
 
-import {
+import  {
   BrowserRouter as Router,
   Routes,
   Route
