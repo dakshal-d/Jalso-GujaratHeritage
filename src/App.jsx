@@ -28,8 +28,7 @@ export default function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route exact path="/" element={ <Hero />} />
-          
+          <Route exact path="/" element={ <Hero />} />          
           <Route exact path="/food" element={ <Food />} />
           <Route exact path="/travel" element={ <Travel />} />
           <Route exact path="/travel/KnowWeather" element={ <KnowWeather/>} />
@@ -47,8 +46,6 @@ export default function App() {
         </Routes>
         <Footer/>
       </Router>
-
-
     </div>
   );
 }
