@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ContactUs from "./components/ContactUs";
+import LogIn from "./components/LogIn";
 import Food from "./components/Food";
 import Travel from "./components/Travel";
 import KnowWeather from "./components/KnowWeather";
@@ -31,6 +32,7 @@ export default function App() {
           <Route exact path="/" element={ <Hero />} />          
           <Route exact path="/food" element={ <Food />} />
           <Route exact path="/travel" element={ <Travel />} />
+          <Route exact path="/LogIn" element={ <LogIn />} />
           <Route exact path="/travel/KnowWeather" element={ <KnowWeather/>} />
           <Route exact path="/travel/TourismAttraction" element={ <TourismAttraction/>} />
           <Route exact path="/travel/Surat" element={ <Surat/>} />
