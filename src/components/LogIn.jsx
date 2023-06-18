@@ -47,8 +47,6 @@ function LogIn() {
                         </p>
                     </div>
                 </form>
-
-
             </div>
         </div>
     );
