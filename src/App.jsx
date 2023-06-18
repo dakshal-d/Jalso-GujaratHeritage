@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ContactUs from "./components/ContactUs";
 import LogIn from "./components/LogIn";
+import SignUp from "./components/Signup";
 import Food from "./components/Food";
 import Travel from "./components/Travel";
 import KnowWeather from "./components/KnowWeather";
@@ -23,6 +24,7 @@ import  {
   Route
 } from "react-router-dom";
 
+
 export default function App() {
   return (
     <div className="">
@@ -33,6 +35,7 @@ export default function App() {
           <Route exact path="/food" element={ <Food />} />
           <Route exact path="/travel" element={ <Travel />} />
           <Route exact path="/LogIn" element={ <LogIn />} />
+          <Route exact path="/SignUp" element={ <SignUp />} />
           <Route exact path="/travel/KnowWeather" element={ <KnowWeather/>} />
           <Route exact path="/travel/TourismAttraction" element={ <TourismAttraction/>} />
           <Route exact path="/travel/Surat" element={ <Surat/>} />
