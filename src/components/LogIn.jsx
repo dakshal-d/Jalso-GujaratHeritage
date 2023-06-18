@@ -37,11 +37,10 @@ function LogIn() {
                 className="text-xs text-amber-500 hover:underline"
             >Forget Password?
             </a>
-            <div className="mt-6">
-                <button className="w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-amber-500 rounded-md hover:bg-amber-600 focus:outline-none focus:bg-amber-600">
-                    Login
-                </button>
-                <p className="mt-8 text-s font-light text-center text-black">
+            <div className="mb-4">
+            <button className="w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-amber-500 rounded-md hover:bg-amber-600 focus:outline-none focus:bg-amber-600">
+            LogIn</button>
+            <p className="mt-8 text-s font-light text-center text-black">
             {" "}
             Don't have an account?{" "}
             <a href="./SignUp" className="font-medium text-amber-500 hover:underline">Sign up</a>
