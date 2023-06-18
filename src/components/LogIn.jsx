@@ -14,7 +14,7 @@ function LogIn() {
                 <label
                     for="email"
                     className="block text-sm font-semibold text-black"
-                >Email
+                >Email  
                 </label>
                 <input
                     type="email"
