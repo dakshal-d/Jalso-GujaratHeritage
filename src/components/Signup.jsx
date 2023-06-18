@@ -4,7 +4,7 @@ function SignUp() {
     return (
         <div className="flex-col md:max-w-7xl mx-auto p-20 md:px-20 lg:px-40  space-y-2">
             <div className="flex md:space-x-8">
-                <img className='md:w-1/25 rounded-xl hidden md:flex' src="../images/GujTourismLogo.png" alt="" />
+                <img className='md:w-1/2 rounded-xl hidden md:flex' src="../images/GujTourismLogo.png" alt="" />
 
                 <form className="py-10 md:w-1/2 w-full px-10 lg:px-20 bg-gray-700 flex flex-col items-center justify-center space-y-5 rounded-xl">
                     <h1 className="text-3xl font-semibold text-center text-amber-500 ">
