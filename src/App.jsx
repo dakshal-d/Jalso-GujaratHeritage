@@ -17,7 +17,8 @@ import Vadodra from "./components/City/Vadodra";
 import Junagadh from "./components/City/Junagadh";
 import Ahmedabad from "./components/City/Ahmedabad";
 import Rajkot from "./components/City/Rajkot";
-
+import Alert from "./components/Alert";
+import { useState } from 'react';
 import  {
   BrowserRouter as Router,
   Routes,
@@ -26,16 +27,28 @@ import  {
 
 
 export default function App() {
+  const [alert, setAlert] = useState(null);
+
+  const showAlert = (message) =>{
+    setAlert({
+      msg: message,
+    })
+
+    setTimeout(() =>{
+      setAlert(null);
+    }, 2000)
+  }
   return (
     <div className="">
       <Router>
-        <Navbar />
+        <Navbar showAlert={showAlert} />
+        <Alert alert={alert}/>
         <Routes>
           <Route exact path="/" element={ <Hero />} />          
           <Route exact path="/food" element={ <Food />} />
           <Route exact path="/travel" element={ <Travel />} />
-          <Route exact path="/LogIn" element={ <LogIn />} />
-          <Route exact path="/SignUp" element={ <SignUp />} />
+          <Route exact path="/LogIn" element={ <LogIn showAlert={showAlert} />} />
+          <Route exact path="/SignUp" element={<SignUp showAlert={showAlert} />} />
           <Route exact path="/travel/KnowWeather" element={ <KnowWeather/>} />
           <Route exact path="/travel/TourismAttraction" element={ <TourismAttraction/>} />
           <Route exact path="/travel/Surat" element={ <Surat/>} />

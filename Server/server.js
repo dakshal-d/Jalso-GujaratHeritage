@@ -3,7 +3,7 @@ const app = express()
 const mongoose = require('mongoose');
 mongoose.set('strictQuery', false);
 // var routes = require('./route/routes');
-// const cors = require('cors');
+const cors = require('cors');
 
 // app.use(cors(
 //   {
@@ -20,19 +20,10 @@ mongoose.set('strictQuery', false);
 //     console.log("started")
 // });
 
-mongoose.connect("mongodb+srv://clusterjalso.trfmw9e.mongodb.net/",{useNewUrlParser: true,  useUnifiedTopology: true },
-function checkDb(error)
-{
-    if(error)
-    {
-        console.log("Error Connecting to DB");
-    }
-    else
-    {
-        console.log("successfully Connected to DB");
-    }
-});
-
+mongoose.connect("mongodb+srv://clusterjalso.trfmw9e.mongodb.net/jalso1",{useNewUrlParser: true,  useUnifiedTopology: true },
+() => {
+    console.log("DB connected")
+})
 const userSchema = new mongoose.Schema({
     name: String,
     email: String,
@@ -42,7 +33,7 @@ const userSchema = new mongoose.Schema({
 const User = new mongoose.model("User", userSchema)
 
 //Routes
-app.post("/login", (req, res)=> {
+app.post("/LogIn", (req, res)=> {
     const { email, password} = req.body
     User.findOne({ email: email}, (err, user) => {
         if(user){
@@ -57,7 +48,7 @@ app.post("/login", (req, res)=> {
     })
 }) 
 
-app.post("/register", (req, res)=> {
+app.post("/SignUp", (req, res)=> {
     const { name, email, password} = req.body
     User.findOne({email: email}, (err, user) => {
         if(user){
@@ -80,6 +71,9 @@ app.post("/register", (req, res)=> {
     
 }) 
 
+// app.get("/", (req, res)=> {
+//     res.send("hello")
+// }) 
 app.listen(9002,() => {
     console.log("BE started at port 9002")
 })

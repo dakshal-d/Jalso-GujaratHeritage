@@ -26,7 +26,7 @@ const SignUp = () => {
     const SignUp = () => {
         const { name, email, password, reEnterPassword } = user
         if( name && email && password && (password === reEnterPassword)){
-            axios.post("http://localhost:9002/register", user)
+            axios.post("http://localhost:9002/SignUp", user)
             .then( res => {
                 alert(res.data.message)
              
@@ -42,7 +42,7 @@ const SignUp = () => {
     return (
         <div className="flex-col md:max-w-7xl mx-auto p-20 md:px-20 lg:px-40  space-y-2">
             <div className="flex md:space-x-8">
-                <img className='md:w-1/2 rounded-xl hidden md:flex' src="../images/GujTourismLogo.png" alt="" />
+                <img className='md:w-1/2 rounded-xl hidden md:flex' src="../images/GujTourismLogo.png" alt="" />               
 
                 <form  className="py-10 md:w-1/2 w-full px-10 lg:px-20 bg-gray-700 flex flex-col items-center justify-center space-y-5 rounded-xl">
                     <h1 className="text-3xl font-semibold text-center text-amber-500 ">
@@ -89,7 +89,7 @@ const SignUp = () => {
                         >Confirm Password
                         </label>
                         <input
-                            type="email" name="reEnterPassword" value={user.reEnterPassword} placeholder="Re-enter Password" onChange={ handleChange }
+                            type="password" name="reEnterPassword" value={user.reEnterPassword} placeholder="Re-enter Password" onChange={ handleChange }
                             className="block w-full px-4 py-2 mt-2 text-amber-500 bg-white border rounded-md focus:border-purple-400 focus:ring-purple-300 focus:outline-none focus:ring focus:ring-opacity-40"
                         />
                     </div>
