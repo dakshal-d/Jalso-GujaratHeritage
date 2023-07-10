@@ -10,7 +10,7 @@ const ContactUs = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_m2uv4y3', 'template_rbddve5', form.current, 'pU2Br9ZpJz-XjRLTv')
+    emailjs.sendForm('', '', form.current, '')
       .then((result) => {
         console.log(result.text);
         toast.success('Message sent successfully');

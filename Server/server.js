@@ -6,7 +6,7 @@ const cors = require('cors');
 app.use(cors());
 app.use(express.json());
 
-mongoose.connect(`mongodb+srv://dd:rNZ2Za3nDM7qez@clusterjalso.trfmw9e.mongodb.net/?retryWrites=true&w=majority`);
+mongoose.connect(`mongodb+srv://dd:<password>@clusterjalso.trfmw9e.mongodb.net/?retryWrites=true&w=majority`);
 
 const userSchema = new mongoose.Schema({
     name: String,
