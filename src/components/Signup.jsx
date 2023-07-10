@@ -1,5 +1,7 @@
 import React from 'react'
 import {useState} from 'react'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 // import { useNavigate} from 'react-router-dom'
 // 
 import axios from "axios"
@@ -28,10 +30,12 @@ const SignUp = () => {
         if( name && email && password && (password === reEnterPassword)){
             axios.post("http://localhost:9002/SignUp", user)
             .then( res => {
+                toast.success('SignUp Successful');
                 alert(res.data.message)
              
             })
         } else {
+            toast.error('invalid input');
             alert("invalid input")
         }
         
@@ -98,6 +102,7 @@ const SignUp = () => {
                         <button onClick={SignUp} className="w-full px-8 py-2 tracking-wide text-white transition-colors duration-200 transform bg-amber-500 rounded-md hover:bg-amber-600 focus:outline-none focus:bg-amber-600">
                             SignUp
                         </button>
+                        <ToastContainer />
                     </div>
                 </form>
 

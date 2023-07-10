@@ -1,4 +1,6 @@
-import React from 'react'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';import React from 'react'
+
 import {useState} from 'react'
 // import { useNavigate} from 'react-router-dom'
 import axios from 'axios'
@@ -27,7 +29,8 @@ const LogIn = ({ setLoginUser}) => {
     const LogIn = () => {
         axios.post("http://localhost:9002/LogIn", user)
         .then(res => {
-            alert(res.data.message)
+            toast.success('Login Successful');
+            
             setLoginUser(res.data.user)
             // history.push("/")
         })
@@ -77,6 +80,7 @@ const LogIn = ({ setLoginUser}) => {
                             <a href="./SignUp" className="font-medium text-amber-500 hover:underline">Sign up</a>
                         </p>
                     </div>
+                    <ToastContainer />
                 </form>
             </div>
         </div>
