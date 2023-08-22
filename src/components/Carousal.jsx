@@ -6,8 +6,8 @@ const style = {
   height: 296,
 };
 
-export default () => (
-  <div className=' bg-gray-100 mx-40 flex justify-center my-20 rounded py-10' >
+const Carousal=() => (
+  <div className=' bg-gray-100 mx-40 flex justify-center my-20 rounded py-10'  >
     
 
     <Carousel height={320} width={1380} yOrigin={42} yRadius={48} autoPlay={true}>
@@ -42,3 +42,4 @@ export default () => (
     </Carousel>
   </div>
 );
+export default Carousal

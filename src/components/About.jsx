@@ -4,7 +4,7 @@ function About() {
     return (
         <div className=' bg-gray-100 mx-40 mt-32 shadow-2xl mb-20 rounded flex flex-col space-y-6 items-center justify-center py-10 '>
             
-            <img className='h-52 w-52 ' src='/images/ME.png' />
+            <img className='h-52 w-52 ' src='/images/ME.png' alt=""/>
             <h1 className='text-4xl'>Dakshal Dalsania</h1>
             <p className='text-sm w-1/3 justify-center text-center text-gray-400 flex items-center'>Hello and welcome to my website! My name is Dakshal Dalsania and I'm a Web Developer. I'm passionate about Full Stack Web Development.</p>
             <p className='text-sm w-1/3 justify-center text-center text-gray-400 flex items-center'>Thank you for visiting my website!</p>

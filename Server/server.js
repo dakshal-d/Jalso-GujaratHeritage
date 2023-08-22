@@ -1,12 +1,11 @@
-const express = require('express');
-const app = express();
-const mongoose = require('mongoose');
-const cors = require('cors');
-
+const express = require("express")
+const cors = require("cors")
+require("dotenv").config();
+const app = express()
+const mongoose = require("mongoose");
 app.use(cors());
 app.use(express.json());
-
-mongoose.connect(`mongodb+srv://dd:<password>@clusterjalso.trfmw9e.mongodb.net/?retryWrites=true&w=majority`);
+const connection=mongoose.connect("mongodb+srv://dd:rNZ2Za3nDM7qez@clusterjalso.trfmw9e.mongodb.net/?retryWrites=true&w=majority");
 
 const userSchema = new mongoose.Schema({
     name: String,
@@ -18,19 +17,17 @@ const User = mongoose.model("User", userSchema);
 
 app.post("/login", (req, res) => {
     const { email, password } = req.body;
-    User.findOne({ email: email }, (user) => {
+    console.log(email, password)
+    User.findOne({ email: email }, (err,Saveduser) => {
 
-        if (user) {
-            if (password === user.password) {
-                res.send({ message: "Login Successful", user: user });
-                // toast.success('Login Successful');
+        if (Saveduser) {
+            if (password === Saveduser.password) {
+                res.send({ message: "Login Successful", user: Saveduser });
             } else {
                 res.send({ message: "Password didn't match" });
-                // toast.error('Password did not match');
             }
         } else {
             res.send({ message: "User not registered" });
-            // toast.error('User not registered');
         }
     });
 });
@@ -47,13 +44,23 @@ app.post("/signup", (req, res) => {
                 email,
                 password
             });
-            newUser.save().then(data => {
-                res.status(201).json("New user created", data);
+            newUser.save().then(savedUser => {
+                res.status(201).json({ message: 'New user created', user: savedUser });
             }).catch(err => console.log(err))
         }
     });
 });
 
-app.listen(9002, () => {
-    console.log("BE started at port 9002");
-});
+app.listen(9002,async()=>{
+
+    try {
+        await connection
+        console.log("database is connected")
+    } catch (error) {
+        console.log(error)
+    }
+
+
+    console.log("Server is running on port number",9002)
+
+})

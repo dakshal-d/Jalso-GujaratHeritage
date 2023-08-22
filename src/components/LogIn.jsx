@@ -46,28 +46,28 @@ const LogIn = ({ setLoginUser}) => {
                     </h1>
                     <div className="mb-4">
                         <label
-                            for="email"
+                            htmlFor="email"
                             className="block text-m font-semibold text-black"
                         >Email
                         </label>
                         <input
-                            type="email" name='email' onChange={onChange} value={user.email}
+                            type="email" name='email' onChange={onChange} value={user.email} placeholder="Your Email"
                             className="block w-full px-4 py-2 mt-2 text-amber-500 bg-white border rounded-md focus:border-purple-400 focus:ring-purple-300 focus:outline-none focus:ring focus:ring-opacity-40"
                         />
                     </div>
                     <div className="mb-2">
                         <label
-                            for="password"
+                            htmlFor="password"
                             className="block text-m font-semibold text-black"
                         >Password
                         </label>
                         <input
-                            type="password" name='password' onChange={onChange} value={user.password}
+                            type="password" name='password' onChange={onChange} value={user.password} placeholder="Your Password"
                             className="block w-full px-4 py-2 mt-2 text-amber-500 bg-white border rounded-md focus:border-purple-400 focus:ring-purple-300 focus:outline-none focus:ring focus:ring-opacity-40"
                         />
                     </div>
                     <a
-                        href="#"
+                        href="/login"
                         className="text-xs text-amber-500 hover:underline"
                     >Forgot Password?
                     </a>

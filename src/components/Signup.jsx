@@ -21,7 +21,7 @@ const SignUp = () => {
         const { name, value } = e.target
         setUser({
             ...user,
-            [name]: value
+            [name]: value   
         })
     }
 
@@ -54,7 +54,7 @@ const SignUp = () => {
                     </h1>
                     <div className="mb-4">
                         <label
-                            for="email"
+                            htmlFor="email"
                             className="block text-m font-semibold text-black"
                         >Name
                         </label>
@@ -65,7 +65,7 @@ const SignUp = () => {
                     </div>
                     <div className="mb-4">
                         <label
-                            for="email"
+                            htmlFor="email"
                             className="block text-m font-semibold text-black"
                         >Email
                         </label>
@@ -77,7 +77,7 @@ const SignUp = () => {
 
                     <div className="mb-4">
                         <label
-                            for="password" 
+                            htmlFor="password" 
                             className="block text-m font-semibold text-black"
                         >Password
                         </label>
@@ -88,7 +88,7 @@ const SignUp = () => {
                     </div>
                     <div className="mb-4">
                         <label
-                            for="email"
+                            htmlFor="email"
                             className="block text-m font-semibold text-black"
                         >Confirm Password
                         </label>
