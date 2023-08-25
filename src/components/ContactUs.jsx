@@ -22,7 +22,7 @@ const ContactUs = () => {
   };
 
   return (
-    <div className="bg-gray-100 mx-40 flex justify-center my-40 rounded py-10">
+    <div className="bg-gray-100 mx-40 flex justify-center my-32 rounded py-10">
       <section className="mb-32 text-gray-800">
         <div className="flex flex-wrap">
           <div className="grow-0 shrink-0 basis-auto mb-6 md:mb-0 w-full md:w-6/12 px-3 lg:px-6">
