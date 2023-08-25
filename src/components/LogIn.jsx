@@ -1,17 +1,17 @@
 import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';import React from 'react'
+import 'react-toastify/dist/ReactToastify.css'; import React from 'react'
 
-import {useState} from 'react'
+import { useState } from 'react'
 // import { useNavigate} from 'react-router-dom'
 import axios from 'axios'
 
-const LogIn = ({ setLoginUser}) => {
+const LogIn = ({ setLoginUser }) => {
 
     // const history = useHistory()
 
-    const [ user, setUser] = useState({
-        email:"",
-        password:""
+    const [user, setUser] = useState({
+        email: "",
+        password: ""
     })
 
     const onChange = e => {
@@ -22,18 +22,18 @@ const LogIn = ({ setLoginUser}) => {
         })
     }
     const handleSubmit = async (e) => {
-        e.preventDefault(); 
-    
-      }
+        e.preventDefault();
+
+    }
 
     const LogIn = () => {
         axios.post("http://localhost:9002/LogIn", user)
-        .then(res => {
-            toast.success('Login Successful');
-            
-            setLoginUser(res.data.user)
-            // history.push("/")
-        })
+            .then(res => {
+                toast.success('Login Successful');
+
+                setLoginUser(res.data.user)
+                // history.push("/")
+            })
     }
     return (
         <div className="flex-col md:max-w-7xl mx-auto p-20 md:px-20 lg:px-40  space-y-2">
@@ -47,34 +47,29 @@ const LogIn = ({ setLoginUser}) => {
                     <div className="mb-4">
                         <label
                             htmlFor="email"
-                            className="block text-m font-semibold text-black"
+                            className="block text-m font-light text-amber-500"
                         >Email
                         </label>
                         <input
                             type="email" name='email' onChange={onChange} value={user.email} placeholder="Your Email"
-                            className="block w-full px-4 py-2 mt-2 text-amber-500 bg-white border rounded-md focus:border-purple-400 focus:ring-purple-300 focus:outline-none focus:ring focus:ring-opacity-40"
+                            className="block w-full px-4 py-2 mt-2 text-black bg-white border rounded-md focus:border-purple-400 focus:ring-purple-300 focus:outline-none focus:ring focus:ring-opacity-40"
                         />
                     </div>
-                    <div className="mb-2">
+                    <div className="mb-4">
                         <label
                             htmlFor="password"
-                            className="block text-m font-semibold text-black"
+                            className="block text-m font-light text-amber-500"
                         >Password
                         </label>
                         <input
                             type="password" name='password' onChange={onChange} value={user.password} placeholder="Your Password"
-                            className="block w-full px-4 py-2 mt-2 text-amber-500 bg-white border rounded-md focus:border-purple-400 focus:ring-purple-300 focus:outline-none focus:ring focus:ring-opacity-40"
+                            className="mb-4 block w-full px-4 py-2 mt-2 text-black bg-white border rounded-md focus:border-purple-400 focus:ring-purple-300 focus:outline-none focus:ring focus:ring-opacity-40"
                         />
                     </div>
-                    <a
-                        href="/login"
-                        className="text-xs text-amber-500 hover:underline"
-                    >Forgot Password?
-                    </a>
                     <div className="mb-4">
-                        <button onClick={LogIn} className="w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-amber-500 rounded-md hover:bg-amber-600 focus:outline-none focus:bg-amber-600">
+                        <button onClick={LogIn} className="w-full px-4 py-2 tracking-wide text-black transition-colors duration-200 transform bg-amber-500 rounded-md hover:bg-amber-600 focus:outline-none focus:bg-amber-600">
                             LogIn</button>
-                        <p className="mt-8 text-s font-light text-center text-black">
+                        <p className="mt-8 text-s text-center text-black font-semibold">
                             {" "}
                             Don't have an account?{" "}
                             <a href="./SignUp" className="font-medium text-amber-500 hover:underline">Sign up</a>
