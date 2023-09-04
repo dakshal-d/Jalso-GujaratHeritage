@@ -10,7 +10,7 @@ import Travel from "../components/Travel";
 import KnowWeather from "../components/KnowWeather";
 
 import Alert from "../components/Alert";
-import PrivateRoute from "./PrivateRoute";
+// import PrivateRoute from "./PrivateRoute";
 import { useState } from 'react';
 import  {
   BrowserRouter as Router,

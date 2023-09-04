@@ -205,17 +205,17 @@ function Travel() {
             >Know The Weather</Link><br></br>
             <div className='grid grid-rows-3 grid-cols-4 gap-5 mx-40 '>
 
-                <Link to="/travel/Ahmedabad" className='px-5 py-10 text-xl hover:animate-pulse cursor-pointer hover:border-2 hover:border-black/40 border-2 border-white rounded font-bold bg-amber-500 flex items-center justify-center'
-                >Ahmedabad</Link>
-                <Link to="/travel/TourismAttraction" className='px-5 py-10 col-span-2 row-span-2 py-100 text-xl hover:animate-pulse cursor-pointer hover:border-2 hover:border-black/40 border-2 border-white rounded font-bold bg-amber-500 flex items-center justify-center'
-                >Best Tourism Places In Gujarat</Link>
-                <Link to="/travel/Surat" className='px-5  py-20 text-xl hover:animate-pulse cursor-pointer hover:border-2 hover:border-black/40 border-2 border-white rounded font-bold bg-amber-500 flex items-center justify-center'>Surat</Link>
-                <Link to="/travel/Porbandar" className='px-5  py-20 text-xl hover:animate-pulse cursor-pointer hover:border-2 hover:border-black/40 border-2 border-white rounded font-bold bg-amber-500 flex items-center justify-center'>Porbandar</Link>
-                <Link to="/travel/Vadodra" className='px-5  py-20 text-xl hover:animate-pulse cursor-pointer hover:border-2 hover:border-black/40 border-2 border-white rounded font-bold bg-amber-500 flex items-center justify-center'>Vadodara</Link>
-                <Link to="/travel/GandhiNagar" className='px-5  py-20 text-xl hover:animate-pulse cursor-pointer hover:border-2 hover:border-black/40 border-2 border-white rounded font-bold bg-amber-500 flex items-center justify-center'>GandhiNagar</Link>
-                <Link to="/travel/Rajkot" className='px-5  py-20 text-xl hover:animate-pulse cursor-pointer hover:border-2 hover:border-black/40 border-2 border-white rounded font-bold bg-amber-500 flex items-center justify-center'>Rajkot</Link>
-                <Link to="/travel/Jamnagar" className='px-5  py-20 text-xl hover:animate-pulse cursor-pointer hover:border-2 hover:border-black/40 border-2 border-white rounded font-bold bg-amber-500 flex items-center justify-center'>Jamnagar</Link>
-                <Link to="/travel/Junagadh" className='px-5  py-20 text-xl hover:animate-pulse cursor-pointer hover:border-2 hover:border-black/40 border-2 border-white rounded font-bold bg-amber-500 flex items-center justify-center'>Junagadh</Link>
+                <a href="https://www.gujarattourism.com/central-zone/ahmedabad.html" className='px-5 py-10 text-xl hover:animate-pulse cursor-pointer hover:border-2 hover:border-black/40 border-2 border-white rounded font-bold bg-amber-500 flex items-center justify-center'
+                >Ahmedabad</a>
+                <a href="https://www.gujarattourism.com/" className='px-5 py-10 col-span-2 row-span-2 py-100 text-xl hover:animate-pulse cursor-pointer hover:border-2 hover:border-black/40 border-2 border-white rounded font-bold bg-amber-500 flex items-center justify-center'
+                >Best Tourism Places In Gujarat</a>
+                <a href="https://www.gujarattourism.com/south-zone/surat.html" className='px-5  py-20 text-xl hover:animate-pulse cursor-pointer hover:border-2 hover:border-black/40 border-2 border-white rounded font-bold bg-amber-500 flex items-center justify-center'>Surat</a>
+                <a href="https://www.gujarattourism.com/kutch-zone/kutch.html" className='px-5  py-20 text-xl hover:animate-pulse cursor-pointer hover:border-2 hover:border-black/40 border-2 border-white rounded font-bold bg-amber-500 flex items-center justify-center'>Kutch</a>
+                <a href="https://www.gujarattourism.com/central-zone/vadodara.html" className='px-5  py-20 text-xl hover:animate-pulse cursor-pointer hover:border-2 hover:border-black/40 border-2 border-white rounded font-bold bg-amber-500 flex items-center justify-center'>Vadodara</a>
+                <a href="https://www.gujarattourism.com/central-zone/gandhinagar.html" className='px-5  py-20 text-xl hover:animate-pulse cursor-pointer hover:border-2 hover:border-black/40 border-2 border-white rounded font-bold bg-amber-500 flex items-center justify-center'>GandhiNagar</a>
+                <a href="https://www.gujarattourism.com/saurashtra/rajkot.html" className='px-5  py-20 text-xl hover:animate-pulse cursor-pointer hover:border-2 hover:border-black/40 border-2 border-white rounded font-bold bg-amber-500 flex items-center justify-center'>Rajkot</a>
+                <a href="https://www.gujarattourism.com/saurashtra/jamnagar.html" className='px-5  py-20 text-xl hover:animate-pulse cursor-pointer hover:border-2 hover:border-black/40 border-2 border-white rounded font-bold bg-amber-500 flex items-center justify-center'>Jamnagar</a>
+                <a href="https://www.gujarattourism.com/saurashtra/junagadh.html" className='px-5  py-20 text-xl hover:animate-pulse cursor-pointer hover:border-2 hover:border-black/40 border-2 border-white rounded font-bold bg-amber-500 flex items-center justify-center'>Junagadh</a>
 
             </div>
             <div className="mx-40 my-20 px-20 py-12 text-xl flex items-center bg-white border border-gray-200 rounded-lg shadow  hover:bg-gray-100 dark:border-gray-700 ">

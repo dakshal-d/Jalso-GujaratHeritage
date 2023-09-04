@@ -1,11 +1,13 @@
 const express = require("express")
 const cors = require("cors")
+const { connection } = require("./db")
+
 require("dotenv").config();
 const app = express()
 const mongoose = require("mongoose");
 app.use(cors());
 app.use(express.json());
-const connection=mongoose.connect("mongodb+srv://dd:rNZ2Za3nDM7qez@clusterjalso.trfmw9e.mongodb.net/?retryWrites=true&w=majority");
+// const connection=mongoose.connect("mongodb+srv://dd:rNZ2Za3nDM7qez@clusterjalso.trfmw9e.mongodb.net/?retryWrites=true&w=majority");
 
 const userSchema = new mongoose.Schema({
     name: String,
