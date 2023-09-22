@@ -33,7 +33,7 @@ const LogIn = () => {
           // Assuming json.authtoken contains the JWT token
           localStorage.setItem('token', json.authtoken);
           // Show a toast notification for successful login
-          toast.success('Login Successful');
+        //   toast.success('Login Successful');
           navigate('/travel');
         } else {
           alert('Invalid credentials');
@@ -44,6 +44,7 @@ const LogIn = () => {
         axios.post("http://localhost:9002/user/login", user)
             .then(res => {
                 toast.success('Login Successful');
+                navigate('/travel');
                 // setLoginUser(res.data.user)
             })
     }

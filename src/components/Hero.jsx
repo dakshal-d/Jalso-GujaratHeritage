@@ -15,8 +15,9 @@ function Hero() {
                             </h1>
                             <div className='flex justify-center items-center'>
                                 <p className='md:text-5xl sm:text-4xl text-xl font-bold py-4'>
-                                    <span className='text-orange-500'>RELIVE</span> every moment of
-                                </p>
+                                    <span className='text-orange-500'>RELIVE</span> every moment of 
+                                </p> 
+
                                 {/* <Typed
                                     className='text-orange-600 md:text-5xl sm:text-4xl text-xl font-bold md:pl-4 pl-2'
                                     strings={['CULTURE', 'CULTURE', 'CUISINE']}
@@ -29,7 +30,7 @@ function Hero() {
                                     <li>CULTURE</li>
                                     <li>CUISINE</li>
                                 </ul>
-                            </div>
+                           </div>
                         </div>
 
             

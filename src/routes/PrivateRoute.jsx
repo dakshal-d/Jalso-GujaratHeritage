@@ -1,14 +1,15 @@
-import LogIn from "../components/LogIn"
+import { Navigate} from 'react-router-dom';
 
-export default function PrivateRoute({children}){
+const PrivateRoute = ({ children }) => {
+  // Check if the user is authenticated (you can use your authentication logic here)
+  const isAuthenticated = !!localStorage.getItem('token'); // You may have a different authentication method
 
-    const auth = localStorage.getItem("token")
+  if (!isAuthenticated) {
+    // Redirect to the login page if not authenticated
+    return <Navigate to="/LogIn" />;
+  }
 
+  return children; // Render the protected component if authenticated
+};
 
-        if(auth){
-            return children
-        }
-
-
-    return <LogIn></LogIn>
-}
+export default PrivateRoute;
