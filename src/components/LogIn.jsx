@@ -7,9 +7,6 @@ import axios from 'axios'
 
 const LogIn = () => {
     const navigate = useNavigate();
-
-    // const history = useHistory()
-
     const [user, setUser] = useState({
         email: "",
         password: ""
@@ -47,9 +44,7 @@ const LogIn = () => {
         axios.post("http://localhost:9002/user/login", user)
             .then(res => {
                 toast.success('Login Successful');
-
                 // setLoginUser(res.data.user)
-                // history.push("/")
             })
     }
     return (
