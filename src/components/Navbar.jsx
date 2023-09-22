@@ -52,28 +52,28 @@ const Navbar = () => {
                         <li>
                             <Link
                                 to="/"
-                                className={`block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 ${isActive('/')}`}>
+                                className={`block py-2 pl-3 pr-4 rounded hover:text-orange-700 md:hover:text-orange-700 md:p-0 md:dark:hover:text-blue-500  ${isActive('/')}`}>
                                 Home
                             </Link>
                         </li>
                         <li>
-                            <Link to='/travel' className={`block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 md:dark:hover:text-orange-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 ${isActive('/travel')}`}>Travel</Link>
+                            <Link to='/travel' className={`block py-2 pl-3 pr-4 rounded hover:text-orange-700 md:hover:text-orange-700 md:p-0  ${isActive('/travel')}`}>Travel</Link>
                         </li>
                         <li>
-                            <Link to='/food' className={`block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 md:dark:hover:text-orange-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 ${isActive('/food')}`}>Food</Link>
+                            <Link to='/food' className={`block py-2 pl-3 pr-4 rounded hover:text-orange-700 md:hover:text-orange-700 md:p-0   ${isActive('/food')}`}>Food</Link>
                         </li>
                         <li>
-                            <Link to='/about' className={`block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 md:dark:hover:text-orange-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 ${isActive('/about')}`}>About</Link>
+                            <Link to='/about' className={`block py-2 pl-3 pr-4 rounded hover:text-orange-700 md:hover:text-orange-700 md:p-0  ${isActive('/about')}`}>About</Link>
                         </li>
                         <li>
-                            <Link to='/ContactUs' className={`block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 md:dark:hover:text-orange-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 ${isActive('/ContactUs')}`}>ContactUs</Link>
+                            <Link to='/ContactUs' className={`block py-2 pl-3 pr-4 rounded hover:text-orange-700 md:hover:text-orange-700 md:p-0  ${isActive('/ContactUs')}`}>ContactUs</Link>
                         </li>
                         {!localStorage.getItem('token') ? <><li>
-                            <Link to='/login' className={`block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 md:dark:hover:text-orange-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 ${isActive('/login')}`}>LogIn</Link>
+                            <Link to='/login' className={`block py-2 pl-3 pr-4 rounded hover:text-orange-700 md:hover:text-orange-700 md:p-0  ${isActive('/login')}`}>LogIn</Link>
                         </li><li>
-                                <Link to='/signup' className={`block py-2 pl-3 pr-4 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 md:dark:hover:text-orange-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 ${isActive('/signup')}`}>SignUp-It's Free</Link>
+                                <Link to='/signup' className={`block py-2 pl-3 pr-4 rounded hover:text-orange-700 md:hover:text-orange-700 md:p-0  ${isActive('/signup')}`}>SignUp-It's Free</Link>
                             </li></>
-                            : <div className='d-flex'><button onClick={handleLogout} className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-orange-700 md:p-0 md:dark:hover:text-orange-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Logout</button></div>}
+                            : <button onClick={handleLogout} className="block py-2 pl-3 pr-4 rounded hover:text-orange-700 md:hover:text-orange-700 md:p-0">Logout</button>}
                     </ul>
                 </div>
             </div>
