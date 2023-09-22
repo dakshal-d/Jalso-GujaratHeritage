@@ -2,10 +2,11 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css'; import React from 'react'
 
 import { useState } from 'react'
-// import { useNavigate} from 'react-router-dom'
+import { useNavigate} from 'react-router-dom'
 import axios from 'axios'
 
-const LogIn = ({ setLoginUser }) => {
+const LogIn = () => {
+    const navigate = useNavigate();
 
     // const history = useHistory()
 
@@ -23,15 +24,31 @@ const LogIn = ({ setLoginUser }) => {
     }
     const handleSubmit = async (e) => {
         e.preventDefault();
-
-    }
+        const response = await fetch('http://localhost:9002/user/login', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ email: user.email, password: user.password }),
+        });
+        const json = await response.json()  
+        if(json.success){
+          // Assuming json.authtoken contains the JWT token
+          localStorage.setItem('token', json.authtoken);
+          // Show a toast notification for successful login
+          toast.success('Login Successful');
+          navigate('/travel');
+        } else {
+          alert('Invalid credentials');
+        }
+      };
 
     const LogIn = () => {
-        axios.post("http://localhost:9002/LogIn", user)
+        axios.post("http://localhost:9002/user/login", user)
             .then(res => {
                 toast.success('Login Successful');
 
-                setLoginUser(res.data.user)
+                // setLoginUser(res.data.user)
                 // history.push("/")
             })
     }

@@ -10,10 +10,9 @@ import Travel from "../components/Travel";
 import KnowWeather from "../components/KnowWeather";
 
 import Alert from "../components/Alert";
-// import PrivateRoute from "./PrivateRoute";
+import PrivateRoute from "./PrivateRoute";
 import { useState } from 'react';
 import  {
-  BrowserRouter as Router,
   Routes,
   Route
 } from "react-router-dom";
@@ -33,13 +32,13 @@ export default function AllRoutes() {
   }
   return (
     <div className="">
-      <Router>
+
         <Navbar showAlert={showAlert} />
         <Alert alert={alert}/>
         <Routes>
           <Route exact path="/" element={ <Hero />} />          
-          <Route exact path="/food" element={ <Food />} />
-          <Route exact path="/travel" element={<Travel />} />
+          <Route exact path="/food" element={ <PrivateRoute><Food /></PrivateRoute>} />
+          <Route exact path="/travel" element={<PrivateRoute><Travel /></PrivateRoute>} />
           <Route exact path="/LogIn" element={ <LogIn showAlert={showAlert} />} />
           <Route exact path="/SignUp" element={<SignUp showAlert={showAlert} />} />
           <Route exact path="/travel/KnowWeather" element={ <KnowWeather/>} />
@@ -47,7 +46,6 @@ export default function AllRoutes() {
           <Route exact path="/ContactUs" element={ <ContactUs />} />
         </Routes>
         <Footer/>
-      </Router>
     </div>
   );
 }

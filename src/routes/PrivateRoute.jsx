@@ -1,10 +1,8 @@
-// import { useEffect } from "react"
-import { useSelector } from "react-redux"
 import LogIn from "../components/LogIn"
 
 export default function PrivateRoute({children}){
 
-    const {auth} = useSelector((state)=>state.userReducer)
+    const auth = localStorage.getItem("token")
 
 
         if(auth){
