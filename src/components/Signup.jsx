@@ -25,7 +25,7 @@ const SignUp = () => {
     const SignUp = () => {
         const { name, email, password, reEnterPassword } = user
         if (name && email && password && (password === reEnterPassword)) {
-            axios.post("http://localhost:9002/SignUp", user)
+            axios.post("https://jalso-backend.onrender.com/SignUp", user)
                 .then(res => {
                     toast.success('SignUp Successful');
                     alert(res.data.message)

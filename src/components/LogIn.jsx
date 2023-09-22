@@ -21,7 +21,7 @@ const LogIn = () => {
     }
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const response = await fetch('http://localhost:9002/user/login', {
+        const response = await fetch('https://jalso-backend.onrender.com/user/login', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -41,7 +41,7 @@ const LogIn = () => {
       };
 
     const LogIn = () => {
-        axios.post("http://localhost:9002/user/login", user)
+        axios.post("https://jalso-backend.onrender.com/user/login", user)
             .then(res => {
                 toast.success('Login Successful');
                 navigate('/travel');
