@@ -1,6 +1,6 @@
 import React from 'react'
 import Carousal from './Carousal'
-import Typed from 'react-typed';
+// import Typed from 'react-typed';
 
 function Hero() {
     return (
@@ -17,13 +17,18 @@ function Hero() {
                                 <p className='md:text-5xl sm:text-4xl text-xl font-bold py-4'>
                                     <span className='text-orange-500'>RELIVE</span> every moment of
                                 </p>
-                                <Typed
+                                {/* <Typed
                                     className='text-orange-600 md:text-5xl sm:text-4xl text-xl font-bold md:pl-4 pl-2'
-                                    strings={['CULTURE', 'HERITAGE', 'CUISINE']}
+                                    strings={['CULTURE', 'CULTURE', 'CUISINE']}
                                     typeSpeed={120}
                                     backSpeed={140}
                                     loop
-                                />
+                                /> */}
+                                <ul className='text-orange-600 md:text-5xl sm:text-4xl text-xl font-bold md:pl-4 pl-2 animate-pulse'>
+                                    <li>HERITAGE</li>
+                                    <li>CULTURE</li>
+                                    <li>CUISINE</li>
+                                </ul>
                             </div>
                         </div>
 
