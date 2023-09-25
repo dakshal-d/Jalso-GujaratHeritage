@@ -82,7 +82,7 @@ const LogIn = () => {
                     <div className="mb-4">
                         <button onClick={LogIn} className="w-full px-4 py-2 tracking-wide text-black transition-colors duration-200 transform bg-amber-500 rounded-md hover:bg-amber-600 focus:outline-none focus:bg-amber-600">
                             LogIn</button>
-                        <p className="mt-8 text-s text-center text-black font-semibold">
+                        <p className="mt-8 text-s text-center text-white font-semibold">
                             {" "}
                             Don't have an account?{" "}
                             <a href="./SignUp" className="font-medium text-amber-500 hover:underline">Sign up</a>
