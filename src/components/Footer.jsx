@@ -28,10 +28,10 @@ const Footer=()=> {
                             <h2 className="mb-6 text-sm font-bold text-gray-900 uppercase dark:text-white">Follow us</h2>
                             <ul className="text-gray-600 dark:text-gray-400 font-medium">
                                 <li className="mb-4">
-                                    <a href="/" className="hover:font-bold hover:underline ">Github</a>
+                                    <a href="https://github.com/dakshal-d" className="hover:font-bold hover:underline ">Github</a>
                                 </li>
                                 <li>
-                                    <a href="/" className="hover:font-bold hover:underline">LinkedIn</a>
+                                    <a href="https://www.linkedin.com/in/dakshal-d/" className="hover:font-bold hover:underline">LinkedIn</a>
                                 </li>
                             </ul>
                         </div>

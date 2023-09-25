@@ -5,7 +5,7 @@ import 'react-toastify/dist/ReactToastify.css';
 // import { useNavigate} from 'react-router-dom'
 import axios from "axios"
 
-const SignUp = () => {
+const Signup = () => {
 
     const [user, setUser] = useState({
         name: "",
@@ -109,4 +109,4 @@ const SignUp = () => {
     )
 }
 
-export default SignUp
+export default Signup

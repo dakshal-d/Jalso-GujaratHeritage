@@ -7,7 +7,7 @@ const style = {
 };
 
 const Carousal=() => (
-  <div className=' bg-gray-100 mx-40 flex justify-center my-20 rounded py-10'  >
+  <div className=' bg-gray-100 mx-40 flex justify-center rounded py-10 my-20 dark:bg-gray-900'  >
     
 
     <Carousel height={320} width={1380} yOrigin={42} yRadius={48} autoPlay={true}>
