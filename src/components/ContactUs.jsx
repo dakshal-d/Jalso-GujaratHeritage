@@ -23,7 +23,7 @@ const ContactUs = () => {
 
   return (
     <div className='my-32'>
-      <div className="flex justify-center font-semibold text-3xl text-orange-500 mx-80 p-1.5 rounded-3xl bg-gray-800">Contact US</div>
+      <div className="flex justify-center font-semibold text-3xl text-orange-500 mx-80 p-1.5 rounded-3xl bg-gray-800">Contact Us</div>
 
     <div className="bg-gray-100 mx-40 flex justify-center rounded-xl pt-8"> 
          
