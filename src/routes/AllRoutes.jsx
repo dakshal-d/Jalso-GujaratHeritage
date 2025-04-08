@@ -8,6 +8,7 @@ import SignUp from "../components/Signup";
 import Food from "../components/Food";
 import Travel from "../components/Travel";
 import KnowWeather from "../components/KnowWeather";
+import Embedtableau from "../components/Embedtableau";
 
 import Alert from "../components/Alert";
 import PrivateRoute from "./PrivateRoute";
@@ -36,7 +37,8 @@ export default function AllRoutes() {
         <Navbar showAlert={showAlert} />
         <Alert alert={alert}/>
         <Routes>
-          <Route exact path="/" element={ <Hero />} />          
+          <Route exact path="/" element={ <Hero />} /> 
+          <Route exact path="/tableau" element={<Embedtableau />} />         
           <Route exact path="/food" element={ <PrivateRoute><Food /></PrivateRoute>} />
           <Route exact path="/travel" element={<PrivateRoute><Travel /></PrivateRoute>} />
           <Route exact path="/LogIn" element={ <LogIn showAlert={showAlert} />} />

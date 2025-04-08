@@ -57,6 +57,14 @@ const Navbar = () => {
                             </Link>
                         </li>
                         <li>
+                            <Link
+                                to="/tableau"
+                                className={`block py-2 pl-3 pr-4 rounded hover:text-orange-700 md:hover:text-orange-700 md:p-0 md:dark:hover:text-orange-700 dark:text-white ${isActive('/tableau')}`}>
+                                Tableau
+                            </Link>
+                        </li>
+
+                        <li>
                             <Link to='/travel' className={`block py-2 pl-3 pr-4 rounded hover:text-orange-700 md:hover:text-orange-700 md:p-0 dark:text-white ${isActive('/travel')}`}>Travel</Link>
                         </li>
                         <li>
@@ -70,7 +78,8 @@ const Navbar = () => {
                         </li>
                         {!localStorage.getItem('token') ? <><li>
                             <Link to='/login' className={`block py-2 pl-3 pr-4 rounded hover:text-orange-700 md:hover:text-orange-700 md:p-0 dark:text-white ${isActive('/login')}`}>LogIn</Link>
-                        </li><li>
+                        </li>
+                            <li>
                                 <Link to='/signup' className={`block py-2 pl-3 pr-4 rounded hover:text-orange-700 md:hover:text-orange-700 md:p-0 dark:text-white ${isActive('/signup')}`}>SignUp-It's Free</Link>
                             </li></>
                             : <button onClick={handleLogout} className="block py-2 pl-3 pr-4 rounded hover:text-orange-700 md:hover:text-orange-700 md:p-0 dark:text-white">Logout</button>}
